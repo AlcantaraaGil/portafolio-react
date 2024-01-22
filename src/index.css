@@ -21,7 +21,7 @@ code {
 
 .header{
   display: flex;
-  height: 132px;
+  height: 115px;
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid black;
@@ -109,7 +109,7 @@ code {
   font-weight: lighter;
 }
 
-.home a{
+.home .title a {
   padding: 7px;
   border-radius: 8px;
   font-weight: bold;
@@ -118,8 +118,11 @@ code {
   text-decoration: none;
   transition: all 300ms;
 }
+.home .last-works a {
+  font-weight: bold;
+}
 
-.home a:hover,
+.home .title a:hover,
 input[type="submit"]:hover,
 button:hover{
   background-color: #2948fa;
@@ -165,4 +168,111 @@ button{
   background-color: #fa4529;
   text-decoration: none;
   transition: all 300ms;
+}
+
+.works{
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-item{
+  flex-basis: 30%;
+  flex-grow: 1;
+  margin: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 0.3px solid #ddd;
+}
+.work-item .mask {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.work-item img{
+  width: 100%;
+  transition: all 500ms;
+}
+
+.work-item .mask:hover img{
+  width: 120%;
+  margin-right: 20%;
+}
+
+.work-item span{
+  margin-left: 15px;
+  color: gray;
+  margin-top: 10px;
+  display: block;
+}
+
+.work-item h2{
+  display: block;
+  color: black;
+  margin-top: 5px;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.work-item a{
+  margin-left: 15px;
+  color: black;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.work-item a:hover{
+  color: #fa4529;
+}
+
+.work-item h3{
+  margin-left: 15px;
+  display: block;
+  margin-top: 0;
+  color: #4444;
+  padding-top: 5px;
+  border-top: 1px solid #ddd;
+}
+
+.page-work .mask{
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page .heading{
+  text-align: center;
+}
+
+
+.page-work .mask img{
+  width: 60%;
+}
+.page .heading{
+  margin-top: 10px;
+}
+.page-work a{
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  background-color: #fa4529;
+  text-decoration: none;
+  transition: all 300ms;
+}
+.page-work a:hover{
+  background-color: #2948fa;
+}
+
+.page-work .descripcion{
+  font-size:larger;
+}
+.page-work .tecnologias{
+  font-size:larger;
+  color: rgb(98, 97, 97);
+  font-weight: lighter;
 }

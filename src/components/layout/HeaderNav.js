@@ -17,12 +17,6 @@ export const HeaderNav = () => {
                     <NavLink to='/portafolio'>portafolio</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/servicios'>servicios</NavLink>
-                </li>
-                <li>
-                    <NavLink to='/curriculum'>curriculum</NavLink>
-                </li>
-                <li>
                     <NavLink to='/contacto'>contacto</NavLink>
                 </li>
 
